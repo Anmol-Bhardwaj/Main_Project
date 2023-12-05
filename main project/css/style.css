@@ -1,0 +1,1019 @@
+/* general CSS for the whole file */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Flamenco', sans-serif;
+}
+
+/* body */
+body {
+    background-color: #f0efef;
+}
+/* global p tag */
+p{
+    font-family: 'Arvo', serif;
+}
+
+/* scrollbar size */
+
+::-webkit-scrollbar {
+    width: 22px;
+}
+
+/* scrollbar design */
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 30%, rgba(0,212,255,1) 100%);
+    border-radius: 50px;
+}
+
+/* hover on scrollbar */
+::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%, rgba(9,9,121,1) 30%);
+}
+
+/* scrollbar track */
+::-webkit-scrollbar-track {
+    border-radius: 50px;
+    box-shadow: inset 0 0 5px grey;
+    background-color: rgba(63, 185, 255, 0.241);
+}
+
+/* navigation bar */
+header>nav {
+    width: 100%;
+    height: 10vh;
+    /* background-color: rgba(255, 166, 0, 0.805); */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 10px;
+    z-index: 2;
+    position: fixed;
+    top: 0px;
+}
+
+/* div to put in company logo */
+header>nav>.logo {
+    width: 9vh;
+    height: 8vh;
+    overflow: hidden;
+}
+
+/* company logo */
+header>nav>.logo>a>img {
+    width: 100%;
+    height: 100%;
+}
+
+/* navtag section */
+header>nav>.taglines {
+    width: 30vw;
+}
+
+/* navtags */
+header>nav>.taglines>.navtags {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+header>nav>.taglines>.navtags>a {
+    text-decoration: none;
+    color: blanchedalmond;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.big{
+    font-weight: bold;
+    font-family: 'Arvo', serif;
+}
+
+header>nav>.taglines>.navtags>a:hover {
+    border-bottom: 1px solid blanchedalmond;
+
+}
+
+
+/* CSS FOR HOME PAGE */
+
+
+
+/* main */
+main {
+    width: 100%;
+}
+
+main>.section1 {
+    max-width: 100%;
+    height: 80vh;
+    display: flex;
+    margin-bottom: 15px;
+    margin-top: 10vh;
+    background-image: url(../photoes/background.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* div containing company name and slogan */
+main>.section1>.heading {
+    align-items: self-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    width: 40%;
+}
+
+/* Company name */
+main>.section1>.heading>h1 {
+    color: rgba(17, 0, 255, 0.764);
+    font-size: 8vh;
+    padding-bottom: 1px;
+    font-weight: bolder;
+}
+
+/* company tagline */
+main>.section1>.heading>h2 {
+    color: rgba(5, 5, 113, 0.792);
+    font-size: 4vh;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Order button */
+main>.section1>.heading>a {
+    width: auto;
+    height: auto;
+    text-decoration: none;
+    color: white;
+    border: 1px solid red;
+    padding: 15px 40px;
+    border-radius: 50px;
+    border: none;
+
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Hover effect for Order button */
+main>.section1>.heading>a:hover {
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+    opacity: 0.8;
+}
+
+
+/* Div to differentiate between 2 sections */
+.borderdiv {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.borderdiv>div {
+    width: 30%;
+    margin: 30px 0;
+    border: 2px solid rgba(28, 28, 181, 0.756);
+}
+
+
+/* section 2 */
+main>.section2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* special offers image */
+main>.section2>figure {
+    width: 21%;
+    height: 300px;
+    margin: 15px 0 45px 0;
+    cursor: pointer;
+    /* background-color: rgba(255, 166, 0, 0.805); */
+    border-radius: 50px;
+    filter: contrast(0.95);
+}
+
+/* hover effect to show a specific image */
+main>.section2>figure:hover {
+    width: 22%;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.316);
+    filter: contrast(1.2);
+}
+
+
+main>.section2>figure>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* text under the special offers */
+main>.section2>figure>figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main>.section2>figure>figcaption>p {
+    font-size: 25px;
+    color: rgba(5, 5, 113, 0.792);
+}
+
+
+/* css for footer */
+footer {
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+/* footer links css */
+footer>.sectiona {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+footer>.sectiona>div>h3 {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+}
+
+footer>.sectiona>div>div {
+    display: flex;
+    flex-direction: column;
+}
+
+footer>.sectiona>div>div>a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+/* hover effect to give an underline to when hovering */
+footer>.sectiona>div>div>a:hover {
+    text-decoration: underline;
+}
+
+footer>.sectionb {
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* div containing social media links */
+footer>.sectionb>.diva {
+    display: flex;
+}
+
+footer>.sectionb>.diva>.icondiv {
+    margin-right: 25px;
+}
+
+footer>.sectionb>.diva>.icondiv>.iconimgdiv {
+    width: 40px;
+    height: 40px;
+}
+
+footer>.sectionb>.diva>.icondiv>.iconimgdiv>a>img {
+    width: 100%;
+    height: 100%;
+}
+
+/* div containing copyright claim */
+
+footer>.sectionb>.divb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer>.sectionb>.divb>.logos {
+    width: 6vh;
+    height: 6vh;
+    overflow: hidden;
+    /* border-radius: 20px; */
+    margin-right: 25px;
+}
+
+footer>.sectionb>.divb>.logos>a>img {
+    width: 100%;
+    height: 100%;
+}
+
+footer>.sectionb>.divb>a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+    
+
+
+
+
+/* CSS for ABOUT US page */
+
+.a11{
+    text-align: center;
+    padding: 20px 80px;
+    line-height: 35px;
+    font-size: 25px;
+    /* kerning: 20px; */
+}
+.a2{
+    display: flex;
+    height: 40vh;
+}
+.imagediv{
+    width: 30%;
+    height: 90%;
+    padding: 0 40px;
+}
+.imagediv > img{
+    width: 100%;
+    height: 100%;
+}
+.textpara{
+    width: 70%;
+    text-align: center;
+    padding: 20px 40px;
+    font-size: 25px;
+    line-height: 35px;
+    margin: auto;
+}
+/* CSS FOR CONTACT US PAGE */
+
+
+
+.signin {
+    margin-top: 12vh;
+}
+
+/* Sign up form div*/
+.signin>.loginform {
+    width: 35%;
+    margin: 0 auto 30px auto;
+    padding: 20px;
+    color: black;
+    font-size: larger;
+    border: 1px solid rgba(0, 0, 0, 0.193);
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.23);
+    border-radius: 40px;
+}
+
+/* heading */
+.signin>.loginform>h3 {
+    margin: 10px 0 20px 0;
+    font-size: 30px;
+}
+
+/* sign up form */
+.signin>.loginform>form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* labels */
+.signin>.loginform>form>label {
+    display: block;
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+/* input boxes */
+
+.signin>.loginform>form>input[type="text"],
+.signin>.loginform>form>input[type="email"],
+.signin>.loginform>form>input[type="password"],
+.signin>.loginform>form>input[type="number"],
+textarea {
+    width: 100%;
+    padding: 8px 8px 8px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 15px;
+    color: rgba(5, 5, 113, 0.792);
+}
+
+/* sign up button */
+.signin>.loginform>form>button {
+    padding: 10px 30px;
+    border-radius: 50px;
+    margin: 0 auto;
+    cursor: pointer;
+    border: 1px solid grey;
+    background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+    color: white;
+    font-size: 20px;
+    filter: blur(0.3px);
+}
+
+.signin>.loginform>form>button:hover {
+    background: rgb(121, 61, 9);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+    filter: blur(0px);
+}
+
+/* css to shoe effects on clicking the input boxes */
+
+.signin>.loginform>form>input[type="number"]:focus {
+    outline: 1px solid rgba(28, 28, 181, 0.756);
+    box-shadow: 1px 1px 10px rgba(28, 28, 181, 0.756),
+        1px 1px 10px rgba(0, 0, 255, 0.512) inset;
+}
+
+.signin>.loginform>form>input[type="text"]:focus {
+    outline: 1px solid rgba(28, 28, 181, 0.756);
+    box-shadow: 1px 1px 10px rgba(28, 28, 181, 0.756),
+        1px 1px 10px rgba(0, 0, 255, 0.512) inset;
+}
+
+.signin>.loginform>form>input[type="email"]:focus {
+    outline: 1px solid rgba(28, 28, 181, 0.756);
+    box-shadow: 1px 1px 10px rgba(28, 28, 181, 0.756),
+        1px 1px 10px rgba(0, 0, 255, 0.512) inset;
+}
+
+.signin>.loginform>form>input[type="password"]:focus {
+    outline: 1px solid rgba(28, 28, 181, 0.756);
+    box-shadow: 1px 1px 10px rgba(28, 28, 181, 0.756),
+        1px 1px 10px rgba(0, 0, 255, 0.512) inset;
+}
+
+
+
+
+
+
+/* CSS for PRODUCTS page */
+.productdiv{
+    margin-top: 11vh;
+    text-align: center;
+}
+.productdiv > h2{
+    font-size: 40px;
+}
+
+
+
+
+
+
+
+/* responsive for max-width = 1300px */
+
+@media only screen and (max-width: 1300px) {
+
+    header>nav {
+        width: 100%;
+        height: 9vh;
+        padding: 0 0 0 10px;
+    }
+
+    header>nav>.logo {
+        width: 7vh;
+        height: 7vh;
+        border-radius: 5px;
+    }
+
+    header>nav>section {
+        width: 45vw;
+    }
+
+    header>nav>section>.navtags>a {
+        font-size: 18px;
+    }
+
+
+    main>.section1 {
+        height: 30vh;
+        margin-bottom: 3px;
+        margin-top: 9vh;
+    }
+
+    main>.section1>.heading {
+        padding-left: 60px;
+        width: 60%;
+    }
+
+    main>.section1>.heading>h1 {
+        font-size: 6vh;
+        padding-bottom: 5px;
+        letter-spacing: 1.2px;
+    }
+
+    main>.section1>.heading>h2 {
+        font-size: 3vh;
+        margin-top: 5px;
+        letter-spacing: 0.4px;
+    }
+
+    main>.section1>.heading>a {
+        width: auto;
+        height: auto;
+        margin-top: 10px;
+        padding: 12px 40px;
+        border-radius: 40px;
+        font-size: 15px;
+    }
+
+    main>.section1>.advertisementimg {
+        width: 50vh;
+        height: 30vh;
+    }
+
+    .borderdiv {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .borderdiv>div {
+        width: 26%;
+        margin: 8px 0;
+        border: 1px solid orange;
+    }
+
+
+    main>.section2>figure {
+        width: 26%;
+        height: 1%;
+        margin-top: 5px;
+        border-radius: 40px;
+    }
+
+    main>.section2>figure:hover {
+        width: 28%;
+        box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.316);
+        filter: contrast(1.2);
+    }
+
+    main>.section2>figure>img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+
+
+
+    main>.section2>figure>figcaption>p {
+        font-size: 18px;
+    }
+
+
+
+    footer {
+        margin-top: 8px;
+        margin-bottom: 30px;
+    }
+
+    footer>.sectiona>div>h3 {
+        font-size: 18px;
+        margin-bottom: 7px;
+    }
+
+    footer>.sectiona>div>div>a {
+        font-size: 13px;
+        margin-top: 7px;
+    }
+
+
+
+    footer>.sectionb {
+        height: 20px;
+    }
+
+    footer>.sectionb>.diva>.icondiv {
+        margin-right: 5px;
+    }
+
+    footer>.sectionb>.diva>.icondiv>.iconimgdiv {
+        width: 25px;
+        height: 25px;
+    }
+
+    footer>.sectionb>.divb>.logos {
+        width: 5vh;
+        height: 5vh;
+        margin-right: 5px;
+    }
+
+    footer>.sectionb>.divb>a {
+        font-size: 16px;
+    }
+
+    .signin {
+        margin-top: 9vh;
+    }
+
+    .signin>.loginform {
+        width: 40%;
+    }
+
+    .signin>.loginform>form>button {
+        padding: 10px 26px;
+        border-radius: 40px;
+        font-size: 15px;
+    }
+
+    .order1>.orderform {
+        width: 40%;
+    }
+
+    .order1>.orderform>form>.formbuttondiv>button {
+        padding: 10px 26px;
+        border-radius: 40px;
+        font-size: 15px;
+    }
+}
+
+
+/* responsive for max-width = 1000px */
+
+@media only screen and (max-width: 1000px) {
+
+    header>nav {
+        width: 100%;
+        height: 8vh;
+    }
+
+    header>nav>.logo {
+        width: 6vh;
+        height: 6vh;
+    }
+
+    header>nav>section {
+        width: 45vw;
+    }
+
+    header>nav>section>.navtags>a {
+        font-size: 14px;
+    }
+
+
+    main>.section1 {
+        height: 25vh;
+        margin-bottom: 2px;
+        margin-top: 9vh;
+    }
+
+    main>.section1>.heading {
+        padding-left: 30px;
+        width: 70%;
+        margin-left: 30px;
+    }
+
+    main>.section1>.heading>h1 {
+        font-size: 5vh;
+        padding-bottom: 3px;
+        letter-spacing: 1px;
+    }
+
+    main>.section1>.heading>h2 {
+        font-size: 2.5vh;
+        margin-top: 3px;
+    }
+
+    main>.section1>.heading>a {
+        margin-top: 10px;
+        padding: 10px 25px;
+        font-size: 12px;
+    }
+
+    main>.section1>.advertisementimg {
+        width: 45vh;
+        height: 25vh;
+        margin-right: 100px;
+        margin-left: 0px;
+    }
+
+    .borderdiv>div {
+        width: 24%;
+    }
+
+
+    main>.section2>figure {
+        width: 33.4%;
+    }
+
+    main>.section2>figure:hover {
+        width: 35%;
+    }
+
+    main>.section2>figure>figcaption>p {
+        font-size: 18px;
+    }
+
+
+    footer {
+        margin-top: 8px;
+        margin-bottom: 30px;
+    }
+
+    footer>.sectiona>div>h3 {
+        font-size: 16px;
+    }
+
+    footer>.sectiona>div>div>a {
+        font-size: 12px;
+    }
+
+
+    footer>.sectionb>.diva>.icondiv>.iconimgdiv {
+        width: 20px;
+        height: 20px;
+    }
+
+    footer>.sectionb>.divb>.logos {
+        width: 4vh;
+        height: 4vh;
+    }
+
+    footer>.sectionb>.divb>a {
+        text-decoration: none;
+        color: black;
+        font-size: 13px;
+    }
+
+
+    .signin {
+        margin-top: 8vh;
+    }
+
+    .signin>.loginform {
+        width: 50%;
+    }
+
+    .order1>.orderform {
+        width: 50%;
+    }
+
+}
+
+
+/* responsive for max-width = 715px */
+
+@media only screen and (max-width: 715px) {
+
+
+    main>.section1 {
+        height: 20vh;
+        margin-bottom: 1px;
+    }
+
+    main>.section1>.heading {
+        padding-left: 20px;
+        width: 60%;
+    }
+
+    main>.section1>.heading>h1 {
+        font-size: 3.5vh;
+    }
+
+    main>.section1>.heading>h2 {
+        font-size: 2vh;
+    }
+
+    main>.section1>.heading>a {
+        padding: 10px 25px;
+        border-radius: 50px;
+        font-size: 10px;
+    }
+
+    main>.section1>.advertisementimg {
+        width: 35vh;
+        height: 20vh;
+    }
+
+    main>.section2>figure>figcaption>p {
+        font-size: 14px;
+    }
+
+
+    .signin {
+        margin-top: 9vh;
+    }
+
+    .signin>.loginform {
+        width: 60%;
+    }
+
+    .order1>.orderform {
+        width: 60%;
+    }
+
+    .a11{
+        line-height: 20px;
+        font-size: 15px;
+    }
+    .imagediv{
+        width: 50%;
+        height: 90%;
+        padding: 0 40px;
+    }
+
+    .textpara{
+        font-size: 15px;
+        line-height: 20px;
+        width: 50%;
+    }
+}
+
+/* responsive for max-width = 580px */
+
+@media only screen and (max-width: 580px) {
+    header>nav {
+        width: 100%;
+        height: 8vh;
+        padding: 0 0 0 10px;
+    }
+
+    header>nav>.logo {
+        width: 5vh;
+        height: 5vh;
+        border-radius: 5px;
+    }
+
+    header>nav>section {
+        width: 55vw;
+    }
+
+    header>nav>section>.navtags>a {
+        font-size: 9px;
+    }
+
+
+    main>.section1 {
+        height: 15vh;
+        margin-bottom: 1px;
+        margin-top: 8vh;
+    }
+
+    main>.section1>.heading {
+        padding-left: 10px;
+        width: 225%;
+    }
+
+    main>.section1>.heading>h1 {
+        font-size: 3vh;
+        padding-bottom: 0px;
+        letter-spacing: 1.5px;
+    }
+
+    main>.section1>.heading>h2 {
+        font-size: 1.5vh;
+        margin-top: 5px;
+        letter-spacing: 0.6px;
+    }
+
+    main>.section1>.heading>a {
+        width: auto;
+        height: auto;
+        margin-top: 5px;
+        padding: 8px 18px;
+        border-radius: 50px;
+        font-size: 8px;
+    }
+
+    main>.section1>.advertisementimg {
+        width: 40vh;
+        height: 10vh;
+        margin: 0 10%;
+    }
+
+    .borderdiv {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .borderdiv>div {
+        width: 30%;
+        margin: 12px 0;
+        border: 1px solid orange;
+    }
+
+    main>.section2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    main>.section2>figure {
+        width: 40%;
+        height: 1%;
+        margin-top: 5px;
+        cursor: pointer;
+        background-color: rgba(255, 166, 0, 0.805);
+        border-radius: 50px;
+        filter: contrast(0.95);
+    }
+
+    main>.section2>figure:hover {
+        width: 43%;
+        box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.316);
+        filter: contrast(1.2);
+    }
+
+    main>.section2>figure>img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+
+    main>.section2>figure>figcaption {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main>.section2>figure>figcaption>p {
+        font-size: 10px;
+        color: rgba(5, 5, 113, 0.792);
+    }
+
+
+
+    footer {
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
+
+    footer>.sectiona {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    footer>.sectiona>div>h3 {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    footer>.sectiona>div>div>a {
+        font-size: 9px;
+        margin-top: 5px;
+    }
+
+
+
+    footer>.sectionb {
+        height: 20px;
+    }
+
+    footer>.sectionb>.diva>.icondiv {
+        margin-right: 5px;
+    }
+
+    footer>.sectionb>.diva>.icondiv>.iconimgdiv {
+        width: 15px;
+        height: 15px;
+    }
+
+    footer>.sectionb>.divb>.logos {
+        width: 3vh;
+        height: 3vh;
+        border-radius: 10px;
+        margin-right: 5px;
+    }
+
+    footer>.sectionb>.divb>a {
+        text-decoration: none;
+        color: black;
+        font-size: 10px;
+    }
+
+
+    .signin {
+        margin-top: 8vh;
+    }
+
+    .signin>.loginform {
+        width: 80%;
+    }
+
+    .order1>.orderform {
+        width: 90%;
+    }
+}
